@@ -8,11 +8,11 @@
   "author": "DSH File Hub contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miaowa311/dsh-file-hub.git"
+    "url": "git+https://github.com/311miaowa/DSH-File-Hub.git"
   },
-  "homepage": "https://github.com/miaowa311/dsh-file-hub#readme",
+  "homepage": "https://github.com/311miaowa/DSH-File-Hub#readme",
   "bugs": {
-    "url": "https://github.com/miaowa311/dsh-file-hub/issues"
+    "url": "https://github.com/311miaowa/DSH-File-Hub/issues"
   },
   "engines": {
     "node": ">=22"

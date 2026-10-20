@@ -1,6 +1,6 @@
 # DSH File Hub
 
-[![CI](https://github.com/miaowa311/dsh-file-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/miaowa311/dsh-file-hub/actions/workflows/ci.yml)
+[![CI](https://github.com/311miaowa/DSH-File-Hub/actions/workflows/ci.yml/badge.svg)](https://github.com/311miaowa/DSH-File-Hub/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > 给 DeepSeek Harness 的本地文件中心：把生成的文件按对话归档，支持跨对话关键词检索，并为每个文件保留可回到来源事件的文件回指。
@@ -91,7 +91,7 @@ DeepSeek Harness 的生成文件通常散落在不同会话、不同工作区里
 ### 从本地目录安装
 
 ```text
-git clone https://github.com/miaowa311/dsh-file-hub.git
+git clone https://github.com/311miaowa/DSH-File-Hub.git
 ```
 
 然后在 Harness 中让 Agent 使用插件管理器安装该目录：
@@ -116,7 +116,7 @@ plugin_manager install_bundle target=D:\path\to\dsh-file-hub
 如果你的 Harness 版本支持从 Git 安装，也可以：
 
 ```text
-plugin_manager install_bundle target=https://github.com/miaowa311/dsh-file-hub
+plugin_manager install_bundle target=https://github.com/311miaowa/DSH-File-Hub
 ```
 
 ### 刷新页面
