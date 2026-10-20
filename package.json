@@ -31,6 +31,7 @@
     "locale/*.json",
     "icon.svg",
     "README.md",
+    "docs/images/*.png",
     "LICENSE",
     "SECURITY.md",
     "CONTRIBUTING.md",

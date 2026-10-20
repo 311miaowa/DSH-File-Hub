@@ -55,6 +55,14 @@ DeepSeek Harness 的生成文件通常散落在不同会话、不同工作区里
   - 插件随 profile 加载后，默认等待约 2 秒在后台建立索引，不阻塞 Harness 启动。
   - 这只是插件索引预热，不创建 Windows 启动项，也不会让 DSH 随系统开机启动。
 
+## 界面
+
+文件中心采用克制的深色布局：左侧按对话归档，中间是当前对话的文件列表和底部页码，右侧是文件详情。来源上下文、当前文件预览和历史出处默认折叠；文件列表与全局搜索结果都使用页码索引，不做无限追加。
+
+![文件中心界面：左侧对话归档，中间文件列表与页码，右侧文件详情](docs/images/file-hub-detail.png)
+
+> 截图使用深色主题和匿名示例数据。
+
 ## 安装
 
 ### 环境
@@ -244,7 +252,7 @@ flowchart LR
 .
 ├── client.js            # Web 文件中心与 slot 注册
 ├── core.js              # 纯函数：路径约束、工具解析、记录折叠、搜索
-├── index.js             # Host 索引、exact-Fetch 路由、file_hub 工具
+├── index.js             # Host 索引、查询/打开文件夹路由、file_hub 工具
 ├── cordis.patch.yml     # bundle patch
 ├── package.json         # Harness bundle/client 声明
 ├── locale/
@@ -255,6 +263,8 @@ flowchart LR
 ├── SECURITY.md          # 安全模型和漏洞报告方式
 ├── CONTRIBUTING.md      # 开发与贡献约定
 ├── CHANGELOG.md         # 版本记录
+├── docs/images/
+│   └── file-hub-detail.png # README 界面截图
 ├── test/
 │   ├── core.test.js     # 纯函数单元测试
 │   └── index.test.js    # Host 索引、路由、工具与实时事件集成测试
