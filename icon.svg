@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="File Hub">
+  <defs>
+    <linearGradient id="fh-folder" x1="8" y1="10" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B8FF3"/>
+      <stop offset="1" stop-color="#1557B0"/>
+    </linearGradient>
+    <linearGradient id="fh-spark" x1="42" y1="8" x2="58" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7EE7C7"/>
+      <stop offset="1" stop-color="#24B58A"/>
+    </linearGradient>
+  </defs>
+  <path d="M7 18.5A5.5 5.5 0 0 1 12.5 13h12.2l5.1 5.4h21.7A5.5 5.5 0 0 1 57 23.9v23.6A5.5 5.5 0 0 1 51.5 53h-39A5.5 5.5 0 0 1 7 47.5v-29Z" fill="url(#fh-folder)"/>
+  <path d="M7 26.5h50" stroke="#CFE6FF" stroke-opacity=".45" stroke-width="1.5"/>
+  <path d="M20 36.5h16M20 43h11" stroke="#EAF4FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="m48.5 9 1.9 5.1 5.1 1.9-5.1 1.9-1.9 5.1-1.9-5.1-5.1-1.9 5.1-1.9L48.5 9Z" fill="url(#fh-spark)"/>
+  <circle cx="48.5" cy="17.1" r="2.1" fill="#E9FFF8"/>
+</svg>

@@ -1,0 +1,56 @@
+{
+  "name": "dsh-file-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local, read-only file center for DeepSeek Harness: files grouped by conversation, global keyword search, and stable source references for reprocessing.",
+  "license": "MIT",
+  "author": "DSH File Hub contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miaowa311/dsh-file-hub.git"
+  },
+  "homepage": "https://github.com/miaowa311/dsh-file-hub#readme",
+  "bugs": {
+    "url": "https://github.com/miaowa311/dsh-file-hub/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "core.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check core.js && node --check client.js",
+    "test": "node test/core.test.js && node test/index.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

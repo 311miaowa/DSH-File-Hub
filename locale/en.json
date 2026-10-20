@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "File Hub",
+    "description": "Files grouped by conversation, searchable across history, with stable source references the Agent can reopen for further work."
+  },
+  "panel": "File Hub"
+}

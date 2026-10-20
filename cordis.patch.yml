@@ -1,0 +1,3 @@
+- insert:
+    - id: file-hub
+      name: 'dsh-file-hub'
